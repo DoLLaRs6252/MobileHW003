@@ -149,6 +149,7 @@ class _Pin_pageState extends State<Pin_page> {
                           numberlist.join(), // แสดง PIN ที่ผู้ใช้กด
                           style: TextStyle(
                             fontSize: 30.0,
+                            color: Color.fromARGB(255, 47, 47, 47),
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -188,12 +189,6 @@ class _Pin_pageState extends State<Pin_page> {
                                   height: 80.0,
                                   margin: const EdgeInsets.all(8),
                                   padding: const EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.white,
-                                      width: 0,
-                                    ),
-                                  ),
                                   child: Icon(Icons.close),
                                 ),
                               ),
@@ -211,12 +206,7 @@ class _Pin_pageState extends State<Pin_page> {
                                   height: 80.0,
                                   margin: const EdgeInsets.all(8),
                                   padding: const EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.white,
-                                      width: 0,
-                                    ),
-                                  ),
+                                  
                                   child: Icon(Icons.backspace),
                                 ),
                               )
