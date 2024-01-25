@@ -13,7 +13,7 @@ class _Pin_pageState extends State<Pin_page> {
   var numberlist = ["_", "_", "_", "_", "_", "_"]; // รายการที่ใช้เก็บเลข PIN
   var pin = ""; // เก็บค่า PIN ที่ผู้ใช้กด
 
-  // สร้าง Widget ของรายการผลไม้แต่ละรายการ
+
   Widget buildItem({
     required String label,
     required String label2,
@@ -61,7 +61,7 @@ class _Pin_pageState extends State<Pin_page> {
 
   @override
   Widget build(BuildContext context) {
-    // รายการของรายการผลไม้แต่ละชุด
+
     var itemList = [
       buildItem(
         label: "1",
@@ -221,7 +221,7 @@ class _Pin_pageState extends State<Pin_page> {
     );
   }
 
-  // ฟังก์ชันเพื่ออัปเดตค่า PIN เมื่อผู้ใช้กดรายการผลไม้
+
   void updatePin(String digit) {
     setState(() {
       if (pin.length < 6) {
