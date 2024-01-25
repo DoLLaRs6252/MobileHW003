@@ -26,11 +26,10 @@ class _Pin_pageState extends State<Pin_page> {
         child: Container(
           width: 80.0,
           height: 80.0,
-          
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             border: Border.all(
-              color: Color.fromARGB(255, 47, 47, 47),
+              color: Color.fromARGB(255, 170, 170, 170),
               width: 1.0,
             ),
           ),
@@ -149,8 +148,8 @@ class _Pin_pageState extends State<Pin_page> {
                           numberlist.join(), // แสดง PIN ที่ผู้ใช้กด
                           style: TextStyle(
                             fontSize: 30.0,
-                            color: Color.fromARGB(255, 47, 47, 47),
-                            fontWeight: FontWeight.w400,
+                            color: Color.fromARGB(255, 170, 170, 170),
+                            fontWeight: FontWeight.w100,
                           ),
                         ),
                       ),
@@ -182,13 +181,12 @@ class _Pin_pageState extends State<Pin_page> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              InkWell(
-                                onTap: () => clearPin(),
-                                child: Container(
-                                  width: 80.0,
-                                  height: 80.0,
-                                  margin: const EdgeInsets.all(8),
-                                  padding: const EdgeInsets.all(10),
+                              Container(
+                                width: 80.0,
+                                height: 80.0,
+                                margin: const EdgeInsets.all(8),
+                                child: InkWell(
+                                  onTap: () => clearPin(),
                                   child: Icon(Icons.close),
                                 ),
                               ),
@@ -199,14 +197,12 @@ class _Pin_pageState extends State<Pin_page> {
                                   onPressed: () => updatePin("0"),
                                 ),
                               ),
-                              InkWell(
-                                onTap: () => deleteLastDigit(),
-                                child: Container(
-                                  width: 80.0,
-                                  height: 80.0,
-                                  margin: const EdgeInsets.all(8),
-                                  padding: const EdgeInsets.all(10),
-                                  
+                              Container(
+                                width: 80.0,
+                                height: 80.0,
+                                margin: const EdgeInsets.all(8),
+                                child: InkWell(
+                                  onTap: () => deleteLastDigit(),
                                   child: Icon(Icons.backspace),
                                 ),
                               )
